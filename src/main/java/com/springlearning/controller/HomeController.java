@@ -1,7 +1,7 @@
 package com.springlearning.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * ClassName: HomeController
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @Author: Steven_LIU
  * @Create: 4/04/2023
  */
-@Controller
+@RestController
 public class HomeController {
     @GetMapping("/")
     public String home() {
